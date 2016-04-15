@@ -12,7 +12,7 @@ New in SEB 2.2:
 
 Fixed bugs:
 - The desktop background picture is now also removed on PCs running Windows 7.
-- If SEB cannot terminate or force quit prohibited applications (Config Tool / Applications / Prohibited Processes) because they are running with other user permissions, then it asks to enter the quit/restart password (which exam supervisors/supporters should know) to continue running.
+- If SEB cannot terminate or force quit prohibited applications (Config Tool / Applications / Prohibited Processes) because they are running with other user permissions, then the exam is blocked and SEB asks to enter the quit/restart password (which exam supervisors/supporters should know) to continue.
 
 Known limitations:
 - This preview version does not yet automatically generate URL filter rules when external additional resources are added. Activate URL filtering and create filter rules manually. 
