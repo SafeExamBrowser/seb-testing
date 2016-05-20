@@ -27,7 +27,7 @@ config tool.
 
 Known limitations:
 - seb2 doesn't yet use SEB settings for setting the browser User Agent.
-- seb2 doesn't yet delete the seb2 browser "Profile"
+- seb2 doesn't yet delete the seb2 browser profile folder using the setting "Remove browser profile" (Browser pane in Config Tool). It might be necessary to delete the folder %APPDATA%\SafeExamBrowser\Profiles after updating SEB, because the seb2 browser caches also some of its code files in this folder.
 - The seb:// and sebs:// URL protocols are not yet registred in the system in this preview version build. 
 - This build does not yet automatically generate URL filter rules when external additional resources are added. Activate URL filtering and create filter rules manually. 
 
