@@ -3,7 +3,6 @@
 Here you can find the current preview build of the next release of SEB for macOS. Preview builds don't include all the functionality of the final version, they are not tested thoroughly and they are not intended for productive use. You can support us by testing the preview version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.1.1 for macOS:
-This build fixes security issues and a WebKit related bug. 
 - Implements support for embedded TLS/SSL & CA certificates and certificate pinning.
 - WebAudio API is enabled now. 
 - Now supporting Basic/Digest and NTLM Authentication.
