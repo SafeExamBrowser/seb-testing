@@ -7,6 +7,9 @@ New in SEB 2.1.1 for macOS:
 - Implements support for embedded TLS/SSL & CA certificates and certificate pinning.
 - SEB is now using a private clipboard, so utilities running in the background and Universal Clipboard (on macOS 10.12 Sierra) cannot be used to paste text into exams (can be disabled if using third party applications in a securely managed user account).
 - WebAudio API is enabled now. 
+- Added blocking panels and windows opened by third party tools running in the background.
+- Added detection for ScreenSharing.
+- Added stopping of AirPlay Display mirroring.
 - Now supporting Basic/Digest and NTLM Authentication.
 - Loading seb(s):// linked settings from authenticated servers is possible now, even with indirect links (not containing the config file name with the .seb extension, like for example sebs://example.com/download.php?id=2352). The login session is remembered, therefore students don't have to login twice in SEB if you start SEB/an exam using a seb(s):// link to a config file on an authenticatated server.
 
