@@ -1,10 +1,11 @@
-**SEB 2.1.1 for macOS Preview Version**
+**SEB 2.1.1 for macOS Golden Master Version**
 
-Here you can find the current preview build of the next release of SEB for macOS. Preview builds don't include all the functionality of the final version, they are not tested thoroughly and they are not intended for productive use. You can support us by testing the preview version and give feedback in our forum or by creating an issue here on our GitHub page. 
+Here you can find the current pre-release build of the next release of SEB for macOS. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.1.1 for macOS:
+- Compatible with macOS 10.12 Sierra.
 - Implements support for embedded TLS/SSL & CA certificates and certificate pinning.
-- SEB is now using a private clipboard, so utilities running in the background cannot be used to paste text into exams (can be disabled if using third party applications in a securely managed user account).
+- SEB is now using a private clipboard, so utilities running in the background and Universal Clipboard (on macOS 10.12 Sierra) cannot be used to paste text into exams (can be disabled if using third party applications in a securely managed user account).
 - WebAudio API is enabled now. 
 - Now supporting Basic/Digest and NTLM Authentication.
 - Loading seb(s):// linked settings from authenticated servers is possible now, even with indirect links (not containing the config file name with the .seb extension, like for example sebs://example.com/download.php?id=2352). The login session is remembered, therefore students don't have to login twice in SEB if you start SEB/an exam using a seb(s):// link to a config file on an authenticatated server.
