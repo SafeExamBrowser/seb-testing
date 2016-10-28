@@ -16,6 +16,8 @@ New in SEB 2.2:
 - Added a browser window toolbar, similar to SEB for Mac OS X.
 
 Fixed bugs:
+- Fixed bug when some keyboard layouts were not switched properly (and other, actually in Windows settings not activated layouts were used) when running SEB on Windows 10.
+- SEB Registry Resetter now exits when a non-existing/wrong user name is entered.
 - Added another method to find out the SID of the current user and send it to the SEBWindowsService. This is an addition to the username, because the translation from username to SID inside the Service sometimes fails.
 - Fixed auto open additional resource behavior when SEB is the launcher.
 - Added update mechanism in WiX Installer to fix updates of SEB 2.2 to another 2.2 build.
