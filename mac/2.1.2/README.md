@@ -1,11 +1,15 @@
-**SEB 2.1.1.1 for macOS Golden Master Version**
+**SEB 2.1.2 for macOS Release Candidate Version**
 
 Here you can find the current pre-release build of the next release of SEB for macOS. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
-New in SEB 2.1.1.1 for macOS:
+New in SEB 2.1.2 (was first versioned 2.1.1.1) for macOS:
 - Fixes a bug when a browser window wasn’t scaled correctly to fit the screen (it was placed in the lower left screen corner, mainly off-screen) when only one screen is connected and the „useBuiltin“ setting is false.
 - Fixes a bug when the main browser window stayed open (with setting don’t allow switching to third party apps) when starting SEB by opening a config file (with setting allow switching to third party apps). The window couldn’t be manually closed and stayed in the foreground (as a „zombie“ window, caused by a timing problem when the window gets the close command while it’s still being opened).
 - To solve the latter problem and improve usability generally, SEB now doesn’t open the Start URL from its persitent client settings when SEB was started by opening a config file or by opening a seb(s):// link. In this case the opened settings are directly loaded, in case loading or decrypting isn’t successful (load error, canceled by the user, wrong decryption credentials etc.), SEB is quit instead of starting up with the persistent client settings.
+- Fixed visible screen area was being wrong calculated, not considering correctly if the SEB dock was visible on that screen. This also caused the temporary browser window for authentication not to be moved up when the user moved it underneath the SEB dock. 
+- Fixed this calculation when no main browser window is open yet (when starting SEB by opening a seb(s):// link from a authenticated server and only the temporary browser window is opened).
+- Now opening the main browser window, the SEB dock and the temporary browser window when starting SEB by opening a seb(s):// link from a authenticated server always on the main screen as defined by settings (not macOS).
+- Fixed a bug when SEB could kill itself when a space switch occurred.
 
 New in SEB 2.1.1 for macOS:
 - Compatible with macOS 10.12 Sierra.
