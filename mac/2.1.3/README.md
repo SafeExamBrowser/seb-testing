@@ -6,4 +6,4 @@ New in SEB 2.1.3 for macOS:
 - Improved logging when starting SEB: Now starting to log (with log level Debug and at standard log file path) regardless of current settings directly after SEB starts up, before local persistent settings are initialized.
 - Again fixed a bug when SEB could kill itself when a space switch occurred, this time correctly.
 - Fixed opening seb(s):// link wasn't working when temporary browser window (for authentication) was open and SEB was restarted after editing preferences.
-- Added one point to menu bar height to keep a black edge of menu bar between browser window.
+- Added one point to menu bar height to keep a black edge between menu bar and browser window.
