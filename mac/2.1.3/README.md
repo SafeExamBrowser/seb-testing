@@ -7,3 +7,4 @@ New in SEB 2.1.3 for macOS:
 - Again fixed a bug when SEB could kill itself when a space switch occurred, this time correctly.
 - Fixed opening seb(s):// link wasn't working when temporary browser window (for authentication) was open and SEB was restarted after editing preferences.
 - Added one point to menu bar height to keep a black edge of menu bar between browser window.
+- Fixed a compatibility issue which caused SEB 2.1.2 to crash immediately when started on OS X 10.7.
