@@ -23,6 +23,7 @@ New in SEB 2.2:
 - Added a browser window toolbar, similar to SEB for Mac OS X.
 
 Fixed bugs:
+- Fixed that the Windows (file) Explorer was re-started while SEB was running in its kiosk lockdown mode, displaying the Windows Task Bar suddenly.
 - Fixed bug when some keyboard layouts were not switched properly (and other, actually in Windows settings not activated layouts were used) when running SEB on Windows 10.
 - SEB Registry Resetter now exits when a non-existing/wrong user name is entered.
 - Added another method to find out the SID of the current user and send it to the SEBWindowsService. This is an addition to the username, because the translation from username to SID inside the Service sometimes fails.
