@@ -3,6 +3,9 @@
 Here you can find the current preview build of the next major release of SEB for Windows. Preview builds don't include all the functionality of the final version, they are not tested thoroughly and they are not intended for productive use. You can support us by testing the preview version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.2:
+- SEB now looks for X.509 identity certificates for decrypting an identity-encrypted config file also in the "Trusted People" store in the Windows Certificate Store (in addition to the default "Personal" store). On managed computers this allows to deploy the identity certificate to the "Local Machine/Trusted People" store when installing SEB in an administrator account. The certificate will then also be available in the "Current User/Trusted People" stores of all current users on that machine.
+- Added Gecko/Firefox setting browser.display.use_document_fonts = 1 (as in SEB 2.1.4).
+- Made calculation of Browser Exam Key more stable by excluding .gitignore and .DS_Store files from hash and by sorting files alphabetically.
 - Added new asymmetric/symmetric encryption for config files using identity certificate: First encrypt a randomly generated symmetric key using the X.509 certificate, which is then used to encrypt the config data (for better performance when decrypting certificate encrypted config files).
 - Added new option to Config Tool / Config File pane to use old asymmetric-only encryption (for compatibility with SEB < 2.2).
 - Added new settings option in Browser pane "Allow navigating in additional browser windows". This allows to separately allow browsing back/forward in new browser windows (for example for additional resources), even if it should not be allowed in the main browser window where the exam is running. 
@@ -37,5 +40,6 @@ config tool.
 
 Known limitations:
 - This build does not yet automatically generate URL filter rules when external additional resources are added. Activate URL filtering and create filter rules manually. 
+- Starting SEB by opening a seb(s):// linked config file from an authenticated server doesn't work yet in this build, only opening such indirect seb(s) links from inside SEB.
 
 This document is subject to change, if you're testing SEB 2.2 please check out this document regularly.
