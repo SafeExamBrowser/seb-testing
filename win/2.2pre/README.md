@@ -26,6 +26,8 @@ New in SEB 2.2:
 - Added a browser window toolbar, similar to SEB for Mac OS X.
 
 Fixed bugs:
+- Fixed Bug unable to start WebSocketsServer / WebSocket is blocked.
+- Fixed a a bug  which sometimes caused SEB to crash while exiting, which was caused by the Create New Desktop kiosk mode and the therefore ommited "STAThread" command.
 - Fixed that the Windows (file) Explorer was re-started while SEB was running in its kiosk lockdown mode, displaying the Windows Task Bar suddenly.
 - Fixed bug when some keyboard layouts were not switched properly (and other, actually in Windows settings not activated layouts were used) when running SEB on Windows 10.
 - SEB Registry Resetter now exits when a non-existing/wrong user name is entered.
