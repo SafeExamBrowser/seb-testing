@@ -1,9 +1,12 @@
-**SEB 2.1.4 for Windows Preview Version**
+**SEB 2.1.4 for Windows Golden Master Version**
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.1.4 for Windows:
-- Fixed start the socket server after closing already running processes. This way if an instance of the browser is already running, it gets closed before starting the socket server and the error about the occupied port does not appear.
+- Changed title of setting in Config Tool / Exams to "Use Browser Exam Key (send in HTTP header)" according to Mac version and move checkbox up, to be the first setting in the Browser Exam Key group box. Disabling this setting also disables the Browser Exam Key text field now. 
+- Updated SEB Registry Resetter with additional logging.
+- Updated "Back to Start" button icon to the final version.
+- Fixed starting the socket server after closing already running processes. This way if an instance of the browser is already running, it gets closed before starting the socket server and the error about the occupied port does not appear.
 - Fixed that some permitted applications could not be immediately restarted after being quit. 
 - Changed „Restart Exam Button“ title and icon to „Back to Start Button“, added disclaimer about this function not logging out a before logged in user.
 - Fixed that the initial state was not displayed in the task bar widget for switching keyboard layouts.
