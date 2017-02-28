@@ -3,6 +3,7 @@
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.1.4 for Windows:
+- The installer now always performs a "major update", which guarantees all older files are replaced with the new ones.
 - Changed title of setting in Config Tool / Exams to "Use Browser Exam Key (send in HTTP header)" according to Mac version and move checkbox up, to be the first setting in the Browser Exam Key group box. Disabling this setting also disables the Browser Exam Key text field now. 
 - Updated SEB Registry Resetter with additional logging.
 - Updated "Back to Start" button icon to the final version.
