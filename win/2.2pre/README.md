@@ -3,6 +3,8 @@
 Here you can find the current preview build of the next major release of SEB for Windows. Preview builds don't include all the functionality of the final version, they are not tested thoroughly and they are not intended for productive use. You can support us by testing the preview version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.2:
+- Starting SEB by opening a seb(s):// linked config file from a server secured with Basic Authentication works now as well.
+- Now monitoring processes is always automatically enabled except when "None (for debugging only)" kiosk mode is selected.
 - Updated embedded browser to Firefox 51.0.1.
 - Browser Exam Key is now sent in requests. User interface for this option in the SEB Config Tool Exam tab makes it clearer that you need to enable the option for the key actually being sent in HTTP requests.
 - Starting SEB by opening a seb(s):// linked config file from an OAuth authenticated server works now, with limitations (might break the Quit Link functionality).
@@ -45,6 +47,5 @@ config tool.
 
 Known limitations:
 - This build does not yet automatically generate URL filter rules when external additional resources are added. Activate URL filtering and create filter rules manually. 
-- Starting SEB by opening a seb(s):// linked config file from a server secured with Basic Authentication doesn't work yet in this build, only opening such indirect seb(s) links from inside SEB.
 
 This document is subject to change, if you're testing SEB 2.2 please check out this document regularly.
