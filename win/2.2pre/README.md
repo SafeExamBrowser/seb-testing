@@ -3,6 +3,15 @@
 Here you can find the current preview build of the next major release of SEB for Windows. Preview builds don't include all the functionality of the final version, they are not tested thoroughly and they are not intended for productive use. You can support us by testing the preview version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.2:
+- In the native HTML full screen mode, the SEB task bar is also hidden now. Please note: You have to enable the "Esc" key in SEB settings if full screen mode on your website can only be exit using the key (otherwise provide a button on the webpage!).
+- Default browser agents (desktop and touch mode) now use the default user agent string of the embedded Firefox browser, therefore the user agent reflect the operating system version SEB is running on and the used Firefox version. 
+- Added "Firefox/xx" to the default browser user agent strings for better compatibility.
+- In the "iPad" setting option for the user agent for touch/tablet mode, the default iPad user agent string can be edited in the Config Tool / Browser pane.
+- Fixed that for some third party applications new instances were started when clicking the icon in the task bar (instead switching to the window of the already running instance).
+- Fixed: Already running instances of permitted applications were not quit when SEB starts and were accessible inside SEB. Also fixed this for prohibited applications.
+- Fixed some config tool UI issues: Radio buttons for Zoom Page/Text and User Agent were sometimes not set properly after loading a new config file, main browser window size wasn't disabled when using full screen mode.
+- Fixed in Network/Filter: If editing a filter rule (block/allow), the Config Tool didn't save this edited rule when using commands Save, Save As, closing the Config Tool, Open Settings (with button, menu and drag-and-drop), Revert Settings to Default/Local Client/Last Opened, Use Current Settings to Edit Duplicate/Configure Client/Apply and Start SEB.
+- In the following cases also added checking for unconfirmed passwords: Open Settings (with button, menu and drag-and-drop), Revert Settings to Default/Local Client/Last Opened, Use Current Settings to Edit Duplicate/Configure Client/Apply and Start SEB.
 - Starting SEB by opening a seb(s):// linked config file from a server secured with Basic Authentication works now as well.
 - Now monitoring processes is always automatically enabled except when "None (for debugging only)" kiosk mode is selected.
 - Updated embedded browser to Firefox 51.0.1.
