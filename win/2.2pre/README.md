@@ -40,8 +40,9 @@ New in SEB 2.2:
 - Added a browser window toolbar, similar to SEB for Mac OS X.
 
 Fixed bugs:
+- Again fixed a a bug  which sometimes caused SEB to crash while exiting, which was caused by the Create New Desktop kiosk mode and the therefore omitted "STAThread" command (this time properly). "STAThread" is now active, which should increase stability of SEB while quitting and starting (sometimes the "Confirm Quitting" message box wasn't displayed and SEB seemed frozen when quitting).
+- Fixed on-screen keyboard wasn't displayed in latest versions of Windows 10. "Tablet Mode" needs to be activated in the system. If it isn't, the keyboard icon in the SEB task bar is deactivated and the tooltip indicates that "Tablet Mode" needs to be active and the hardware keyboard detached. 	
 - Fixed Bug unable to start WebSocketsServer / WebSocket is blocked.
-- Fixed a a bug  which sometimes caused SEB to crash while exiting, which was caused by the Create New Desktop kiosk mode and the therefore omitted "STAThread" command.
 - Fixed that the Windows (file) Explorer was re-started while SEB was running in its kiosk lockdown mode, displaying the Windows Task Bar suddenly.
 - Fixed bug when some keyboard layouts were not switched properly (and other, actually in Windows settings not activated layouts were used) when running SEB on Windows 10.
 - SEB Registry Resetter now exits when a non-existing/wrong user name is entered.
