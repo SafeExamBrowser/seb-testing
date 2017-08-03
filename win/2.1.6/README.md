@@ -1,6 +1,6 @@
 **SEB 2.1.6 TESTING Version**
 
-Here you can find the current testing build of the next maintenance release of SEB for Windows. Testing builds usually include all the functionality of the final version, but they are not yet tested thoroughly and they are not intended for productive use. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
+Here you can find the current testing build of the next maintenance release of SEB for Windows. Testing builds usually include all the functionality of the final version, but they are not yet tested thoroughly and they are not intended for productive use. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page.
 
 New in SEB 2.1.6:
 
