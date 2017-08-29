@@ -2,13 +2,17 @@
 
 Here you can find the current preview build of the next major release of SEB for Windows. Preview builds don't include all the functionality of the final version, they are not tested thoroughly and they are not intended for productive use. You can support us by testing the preview version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
-New in SEB 2.2:
+New in SEB 2.2pre2:
 
+- Enhanced SEB Windows Service implementation with fallback file for Registry settings and added more logging information, to prevent that lock, switch user, sign out, change a password and Task Manager are missing in the Windows Security Screen invoked with Ctrl-Alt-Del.
+- Added improved logging for the embedded browser. Note: The log path cannot be changed in exam settings, SEB now uses always the path (and log enable option) which is configured in client config.
+- Fixed: Quitting running applications, either when starting SEB (if they are configured as permitted applications) or when quitting SEB (running permitted applications) failed when these applications consisted of more than one process (have a window handling process) or due to a bug in the quitting processes function.
+- Again attempting to fix crash when quitting SEB by disabling WndProc of TaskbarToolStrip on application shutdown.
+- Removed starting seb2/Firefox with -silent argument again, as it doesn't seem to be necessary to explicitly create seb2/Firefox profile.
 - Added some Firefox settings to improve Service Worker support.
 - Created new installer using the (commercial) InstallShield authoring solution, as in SEB 2.1.x. Apparently the WiX installer still has some issues (file type association not being removed when uninstalling SEB 2.2, SEB 2.1.x entry in the Windows Programs Control Panel isn't removed when SEB 2.2 is updated from SEB 2.1.x. Also we are still missing an install bundle which would install .NET 4.5 automatically on machines running Windows 7.
 - Updated embedded browser to Firefox 52.2.1 ESR (which will receive security updates until June 2018). This is the last version which is compatible with the seb2 XUL browser engine used in SEB 2.2. A future new major release of SEB will be using the Chromium browser engine. 
 - SEB 2.2 now supports Service Workers.
-- Avoiding crash report after quitting SEB by properly deregistering some system events and by catching exceptions in some event handlers.
 - Changed default value for setting removeBrowserProfile to false.
 - Removed message box displayed when cleaning of temporary directory failed.
 - Updated seb2 XUL browser application to current status.
