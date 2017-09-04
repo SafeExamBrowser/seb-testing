@@ -4,6 +4,13 @@ Here you can find the current preview build of the next major release of SEB for
 
 New in SEB 2.2pre2:
 
+- Changed reload in seb2 from hard reload to soft reload (to not break Service Worker when offline).
+- Added settings allowVideoCapture, allowAudioCapture to Config Tool / Browser. 
+- Removed SEB for macOS settings in Config Tool / Browser for new browser windows opened by JavaScript/Plugins.
+- Updated seb2 XUL browser application to current status.
+- Updated embedded Firefox to version 52.3.0 ESR.
+- Browser windows without title should now be displayed correctly in window chooser and be correctly reloaded with the reload button in the task bar.
+- Attempt to fix the issue happening when deleting the temporary directory.
 - Enhanced SEB Windows Service implementation with fallback file for Registry settings and added more logging information, to prevent that lock, switch user, sign out, change a password and Task Manager are missing in the Windows Security Screen invoked with Ctrl-Alt-Del.
 - Added improved logging for the embedded browser. Note: The log path cannot be changed in exam settings, SEB now uses always the path (and log enable option) which is configured in client config.
 - Fixed: Quitting running applications, either when starting SEB (if they are configured as permitted applications) or when quitting SEB (running permitted applications) failed when these applications consisted of more than one process (have a window handling process) or due to a bug in the quitting processes function.
@@ -15,7 +22,6 @@ New in SEB 2.2pre2:
 - SEB 2.2 now supports Service Workers.
 - Changed default value for setting removeBrowserProfile to false.
 - Removed message box displayed when cleaning of temporary directory failed.
-- Updated seb2 XUL browser application to current status.
 - Set Gecko/Firefox setting "dom.serviceWorkers.enabled" to true.
 - In the native HTML full screen mode, the SEB task bar is also hidden now. Please note: You have to enable the "Esc" key in SEB settings if full screen mode on your website can only be exit using the key (otherwise provide a button on the webpage!).
 - Default browser agents (desktop and touch mode) now use the default user agent string of the embedded Firefox browser, therefore the user agent reflect the operating system version SEB is running on and the used Firefox version. 
