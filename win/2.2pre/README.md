@@ -4,6 +4,7 @@ Here you can find the current preview build of the next major release of SEB for
 
 New in SEB 2.2pre2:
 
+- Now passing system language locale correctly to web pages in browser.
 - Changed reload in seb2 from hard reload to soft reload (to not break Service Worker when offline).
 - Added settings allowVideoCapture, allowAudioCapture to Config Tool / Browser. 
 - Removed SEB for macOS settings in Config Tool / Browser for new browser windows opened by JavaScript/Plugins.
