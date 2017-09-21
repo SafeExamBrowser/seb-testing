@@ -1,4 +1,4 @@
-**SEB 2.1.7 Preview Version**
+**SEB 2.1.7 Testing Version**
 
 Here you can find the current pre-release build of the next maintenance update of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
