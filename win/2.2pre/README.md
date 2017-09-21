@@ -79,5 +79,6 @@ config tool.
 Known limitations:
 - This build does not yet automatically generate URL filter rules when external additional resources are added. Activate URL filtering and create filter rules manually. 
 - The implementation of the new URL filter (compatible with SEB for macOS) isn't finished yet. In this build you cannot create or change URL filter rules, import a config file created in an earlier version of SEB for Windows or SEB for macOS.
+- When using touch optimized mode, the SEB task bar can disappear if the screen of a tablet-like device running latest Windows 10 versions is rotated.
 
 This document is subject to change, if you're testing SEB 2.2 please check out this document regularly.
