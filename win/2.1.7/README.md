@@ -4,6 +4,8 @@ Here you can find the current pre-release build of the next maintenance update o
 
 New in SEB 2.1.7:
 
+- Added verification of original filename when allowing user to choose path to third-party application.
+- Fixed bug caused by case-sensitive string comparison when allowing user to choose path to allowed application.
 - Fixed bugs in improvements from previous build.
 - Fixed using alt-tab switching between several browser windows displays two bars.
 - Back ported bugfix for from SEB 2.2 to 2.1.7.
