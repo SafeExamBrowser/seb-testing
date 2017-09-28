@@ -4,6 +4,18 @@ Here you can find the current preview build of the next major release of SEB for
 
 New in SEB 2.2pre2:
 
+- Changed default settings for hooked keys ESC and right mouse key to enabled (true).
+- Added check for Windows Tablet Mode and ask user to enable it if touchmode is enabled.
+- Implemented fallback mechanism for Firefox profile deletion, including additional logging information.
+- Fixed issue which prevented the list of prohibited applications from being rendered correctly in the message box displayed during startup.
+- SEB 2.2 does now automatically disable Chrome notifications during startup.
+- Added new settings sub-key originalName to permitted and prohibited processes in Config Tool and rearranged UI of list fields for permitted and prohibited processes in Config Tool.
+- Added verification of original filename when allowing user to choose path to third-party application.
+- Add list of prohibited (browser) processes automatically to all config files.
+- Now originalName is also automatically determined and added to permitted processes in Config Tool when using the “Choose Application” button.
+- Fixed bug caused by case-sensitive string comparison when allowing user to choose path to allowed application.
+- Removing file extension for permitted and prohibited processes when comparing with running processes.
+- Extended window monitoring by verifying the original filename of a process and only allowing processes whose name exactly match an entry in the configuration.
 - Now passing system language locale correctly to web pages in browser.
 - Changed reload in seb2 from hard reload to soft reload (to not break Service Worker when offline).
 - Added settings allowVideoCapture, allowAudioCapture to Config Tool / Browser. 
@@ -77,7 +89,7 @@ config tool.
 - If SEB cannot terminate or force quit prohibited applications (Config Tool / Applications / Prohibited Processes) because they are running with other user permissions, then the exam is blocked and SEB asks to enter the quit/restart password (which exam supervisors/supporters should know) to continue.
 
 Known limitations:
-- This build does not yet automatically generate URL filter rules when external additional resources are added. Activate URL filtering and create filter rules manually. 
+- This version does not yet automatically generate URL filter rules when external additional resources are added. Activate URL filtering and create filter rules manually. 
 - The implementation of the new URL filter (compatible with SEB for macOS) isn't finished yet. In this build you cannot create or change URL filter rules, import a config file created in an earlier version of SEB for Windows or SEB for macOS.
 - When using touch optimized mode, the SEB task bar can disappear if the screen of a tablet-like device running latest Windows 10 versions is rotated.
 
