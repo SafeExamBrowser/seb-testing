@@ -4,7 +4,7 @@ Here you can find the current preview build of the next major release of SEB for
 
 New in SEB 2.2pre2:
 
-- Updated seb2 browser engine to current state, fixes for built-in PDF viewer, adding localhost and 127.0.0.1 to default proxy exception lists.
+- Updated seb2 browser engine to current state, improved http request handling, fixes for built-in PDF viewer, adding localhost and 127.0.0.1 to default proxy exception lists.
 - Fixed issue with disappearing task bar in tablet/touch optimized mode when turning around the device.
 - Fixed bug which caused SEB to freeze during startup, depending on permitted processes.
 - Changed default settings for hooked keys ESC and right mouse key to enabled (true).
