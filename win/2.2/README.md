@@ -1,9 +1,13 @@
-**SEB 2.2 Preview Version**
+**SEB 2.2 Testing Version**
 
-Here you can find the current preview build of the next major release of SEB for Windows. Preview builds don't include all the functionality of the final version, they are not tested thoroughly and they are not intended for productive use. You can support us by testing the preview version and give feedback in our forum or by creating an issue here on our GitHub page. 
+Here you can find the current testing build of the next major release of SEB for Windows. Testing builds are not intended for productive use. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
-New in SEB 2.2pre2:
+New in SEB 2.2:
 
+- Implemented modern URL filter compatible to SEB for macOS. If you're using config files containing URL filter rules created in older SEB for Windows versions, then you have to create these rules again using the new settings interface in Network / Filter. If you created config files containing URL filter rules in SEB for macOS, the filter rules should work as before.
+- Resolved issue with wrongly placed task bar when reconfiguring SEB.
+- Fixed crash of config tool when attempting to load certificates without common name.
+- Fixed presetting audio settings wasn't saved to config (in Config Tool) and mute wasn't preset in SEB task bar widget.
 - Updated seb2 browser engine to current state, improved http request handling, fixes for built-in PDF viewer, adding localhost and 127.0.0.1 to default proxy exception lists.
 - Fixed issue with disappearing task bar in tablet/touch optimized mode when turning around the device.
 - Fixed bug which caused SEB to freeze during startup, depending on permitted processes.
@@ -93,7 +97,5 @@ config tool.
 
 Known limitations:
 - This version does not yet automatically generate URL filter rules when external additional resources are added. Activate URL filtering and create filter rules manually. 
-- The implementation of the new URL filter (compatible with SEB for macOS) isn't finished yet. In this build you cannot create or change URL filter rules, import a config file created in an earlier version of SEB for Windows or SEB for macOS.
-- When using touch optimized mode, the SEB task bar can disappear if the screen of a tablet-like device running latest Windows 10 versions is rotated.
 
 This document is subject to change, if you're testing SEB 2.2 please check out this document regularly.
