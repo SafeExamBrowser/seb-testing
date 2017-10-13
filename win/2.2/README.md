@@ -4,6 +4,14 @@ Here you can find the current testing build of the next major release of SEB for
 
 New in SEB 2.2:
 
+- Updated internal seb2 browser app, fixing redirected URLs were not filtered. Additional fixes in seb2:
+- Entighted show errorPage rules, preventing the internal error page (request failed) being displayed unnecessarily. Added back button to this page.
+- Quit Link sometimes not exiting SEB: Also removing trailing slashes before comparing request URLs to the quit URL.
+- Remove logging SEB settings from seb2 log.
+- Navigation in seb2 with shortcuts (Ctrl+Cursor left/right) cannot be disabled.
+- Fixed crash of Config Tool when loading certificates without CN.
+- Now also adding URLFilterRules from additional resources.
+- Now trimming trailing slashes “/“ from URL before applying URL filter. Generally streamline request url handling without trailing slash.
 - Implemented modern URL filter compatible to SEB for macOS. If you're using config files containing URL filter rules created in older SEB for Windows versions, then you have to create these rules again using the new settings interface in Network / Filter. If you created config files containing URL filter rules in SEB for macOS, the filter rules should work as before.
 - Resolved issue with wrongly placed task bar when reconfiguring SEB.
 - Fixed crash of config tool when attempting to load certificates without common name.
