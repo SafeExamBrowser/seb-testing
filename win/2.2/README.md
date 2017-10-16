@@ -4,6 +4,8 @@ Here you can find the current testing build of the next major release of SEB for
 
 New in SEB 2.2:
 
+- Fixing reconfiguring SEB, as the main browser window UI wasn't updated according to new settings.
+- Now maximizing browser windows if their size is configured to be 100% width and height.
 - Updated internal seb2 browser app, fixing redirected URLs were not filtered. Additional fixes in seb2:
 - Entighted show errorPage rules, preventing the internal error page (request failed) being displayed unnecessarily. Added back button to this page.
 - Quit Link sometimes not exiting SEB: Also removing trailing slashes before comparing request URLs to the quit URL.
