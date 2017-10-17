@@ -4,6 +4,8 @@ Here you can find the current testing build of the next major release of SEB for
 
 New in SEB 2.2:
 
+- Now updating URL filter rules when saving config files in the Config Tool, so also seb2 white/blacklists in config files get updated (for compatibility with SEB 2.1.x).
+- Now getting a correct handle for the new main browser window, so a second reconfiguration should close the old main browser window correctly. There is still a browser issue which prevents correctly reconfiguring a second time.
 - Fixing reconfiguring SEB, as the main browser window UI wasn't updated according to new settings.
 - Now maximizing browser windows if their size is configured to be 100% width and height.
 - Updated internal seb2 browser app, fixing redirected URLs were not filtered. Additional fixes in seb2:
