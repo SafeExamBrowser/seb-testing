@@ -4,6 +4,8 @@ Here you can find the current testing build of the next major release of SEB for
 
 New in SEB 2.2:
 
+- Updated seb2 browser to fix receiving config file data twice.
+- When reading a config file containing a multipart or custom header, these headers are ignored.
 - Now updating URL filter rules when saving config files in the Config Tool, so also seb2 white/blacklists in config files get updated (for compatibility with SEB 2.1.x).
 - Now getting a correct handle for the new main browser window, so a second reconfiguration should close the old main browser window correctly. There is still a browser issue which prevents correctly reconfiguring a second time.
 - Fixing reconfiguring SEB, as the main browser window UI wasn't updated according to new settings.
