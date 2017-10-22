@@ -4,6 +4,7 @@ Here you can find the current testing build of the next major release of SEB for
 
 New in SEB 2.2:
 
+- Fixed issues in built-in browser which occurred when reconfiguring.
 - Fixed some issues in new URL filter compatible to SEB for macOS (handling wildcard * in all URL parts, also in port and handling query/fragment correctly).
 - Now automatically enabling URL filtering when adding an external additional resource, displaying message box for further explanations.
 - Localized UI strings in SEB Client to German.
