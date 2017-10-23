@@ -1,9 +1,11 @@
-**SEB 2.2 Testing Version**
+**SEB 2.2 Beta Testing Version**
 
-Here you can find the current testing build of the next major release of SEB for Windows. Testing builds are not intended for productive use. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
+Here you can find the current beta testing build of the next major release of SEB for Windows. Testing builds are not intended for productive use. Beta builds contain the final functionality of the release. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.2:
 
+- Added "Allow reload in exam“, "Allow reload in additional window“, “Show reload warning in exam” and “Show reload warning in additional window” options to Config Tool / Browser.
+- Localized also all UI strings in Win Forms in SEB Client to German.
 - Fixed issues in built-in browser which occurred when reconfiguring.
 - Fixed some issues in new URL filter compatible to SEB for macOS (handling wildcard * in all URL parts, also in port and handling query/fragment correctly).
 - Now automatically enabling URL filtering when adding an external additional resource, displaying message box for further explanations.
