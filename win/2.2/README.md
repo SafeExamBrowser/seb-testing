@@ -4,6 +4,11 @@ Here you can find the current beta testing build of the next major release of SE
 
 New in SEB 2.2:
 
+- Fixed that some dialogs (reconfiguring not allowed etc.) were not displayed in the foreground, but hidden behind the browser window and were only accessible using Alt+Tab.
+- Fixed an issue when the seb2 browser stoped working after being started many times and the browser Profiles directory wasn't deleted, because the user agent string sent by SEB 2.2 got too long.
+- "Touch exit" is now always being deselected after switching to Touch optimized mode.
+- Changed Base16 encoding of SEB passwords to use lower case letters a-f (following web standards and macOS/iOS) instead of Microsofts non-standard upper case letters.
+- Improved some UI strings when loading settings and reconfiguring.
 - Added "Allow reload in exam“, "Allow reload in additional window“, “Show reload warning in exam” and “Show reload warning in additional window” options to Config Tool / Browser.
 - Localized also all UI strings in Win Forms in SEB Client to German.
 - Fixed issues in built-in browser which occurred when reconfiguring.
