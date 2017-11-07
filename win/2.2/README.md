@@ -4,6 +4,9 @@ Here you can find the current beta testing build of the next major release of SE
 
 New in SEB 2.2:
 
+- Added monitoring of Windows Explorer to prevent rare cases when explorer.exe was restarted and the shortcuts Win+Tab and Win+D were working.
+- Changed registry key in attempt to disable power options on security screen.
+- Another attempt to fix "Application stopped working" message appearing in some cases after SEB was quit.
 - Fixed that some dialogs (reconfiguring not allowed etc.) were not displayed in the foreground, but hidden behind the browser window and were only accessible using Alt+Tab.
 - Fixed an issue when the seb2 browser stoped working after being started many times and the browser Profiles directory wasn't deleted, because the user agent string sent by SEB 2.2 got too long.
 - "Touch exit" is now always being deselected after switching to Touch optimized mode.
