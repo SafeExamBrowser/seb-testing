@@ -4,5 +4,10 @@ Here you can find the current beta testing build of the next minor release of SE
 
 New in SEB 2.1.8:
 
+- Adding strictly prohibited default processes (screen sharing and communication tools) unconditionally to settings, default (browser) processes only in Disable Explorer Shell kiosk mode.
+- Now removing prohibited default processes in SEB Config Tool conditionally (if user confirm) from settings when loading config file which has Create new desktop kiosk mode set or when switching to Create new desktop (in Security tab).
+- Now logging all SEB files which are used for generating the Browser Exam Key.
+- Added the sebs protocol to MIME types which the seb browser loads without asking the user what to do with it.
+- Fixed dialog for entering settings password (if displayed when starting SEB) had a wrong scale if the system DPI ratio was different than 100%.
 - Added monitoring of Windows Explorer to prevent rare cases when explorer.exe was restarted and the shortcuts Win+Tab and Win+D were working.
 - Re-integrated the "Create New Desktop" kiosk mode and declared dpi-awareness in attempt to resolve mouse pointer offset.
