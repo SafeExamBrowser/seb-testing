@@ -1,9 +1,18 @@
-**SEB 2.2 Beta Testing Version**
+**SEB 2.2 Preview 4 Testing Version**
 
-Here you can find the current beta testing build of the next major release of SEB for Windows. Testing builds are not intended for productive use. Beta builds contain the final functionality of the release. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
+Here you can find the current preview testing build of the next major release of SEB for Windows. Testing builds are not intended for productive use. Preview builds don't contain the full final functionality of the release. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
-New in SEB 2.2:
+New in SEB 2.2pre4:
 
+- No longer adding a second SEB icon to task bar if settings generated in SEB 2.1.x are used.
+- Adding strictly prohibited default processes to settings.
+- Fixed and slightly changed functionality of setting “Download and open SEB Config Files”, which now also controls if SEB can be started with opening seb(s):// config links and .seb config files. The setting is now also respected when a .seb file is downloaded and opened inside of the running SEB.
+- Added remark to setting “Create new desktop” in Config Tool / Security “not available in this version” and tool tip explaining that this setting can be used in older SEB versions.
+- Fixed “Save dowloaded files to... doesn't have an effect” completely, now the file (directory) chooser isn’t displayed anymore and files are saved to the correct directory.
+- Added the sebs protocol to MIME types which the seb browser loads without asking the user what to do with it.
+- Added MIME type application/attemptdata for files with extension .attemptdata and download policy saveToDisk = true and alwaysAsk = false, to make the Moodle offline quiz plugin work more seamlessly with SEB 2.2.
+- Now logging all SEB files which are used for generating the Browser Exam Key.
+- Added some more missing German localized UI strings in SEB Client.
 - Added monitoring of Windows Explorer to prevent rare cases when explorer.exe was restarted and the shortcuts Win+Tab and Win+D were working.
 - Changed registry key in attempt to disable power options on security screen.
 - Another attempt to fix "Application stopped working" message appearing in some cases after SEB was quit.
