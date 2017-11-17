@@ -4,6 +4,7 @@ Here you can find the current beta testing build of the next minor release of SE
 
 New in SEB 2.1.8:
 
+- Fixed a security issue, now checking for SEB windows uses original filename as well.
 - Adding strictly prohibited default processes (screen sharing and communication tools) unconditionally to settings, default (browser) processes only in Disable Explorer Shell kiosk mode.
 - Now removing prohibited default processes in SEB Config Tool conditionally (if user confirm) from settings when loading config file which has Create new desktop kiosk mode set or when switching to Create new desktop (in Security tab).
 - Now logging all SEB files which are used for generating the Browser Exam Key.
