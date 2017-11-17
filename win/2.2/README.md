@@ -4,6 +4,7 @@ Here you can find the current preview testing build of the next major release of
 
 New in SEB 2.2pre4:
 
+- Fixed a security issue, now checking for SEB windows uses original filename as well.
 - No longer adding a second SEB icon to task bar if settings generated in SEB 2.1.x are used.
 - Adding strictly prohibited default processes to settings.
 - Fixed and slightly changed functionality of setting “Download and open SEB Config Files”, which now also controls if SEB can be started with opening seb(s):// config links and .seb config files. The setting is now also respected when a .seb file is downloaded and opened inside of the running SEB.
@@ -30,7 +31,7 @@ New in SEB 2.2pre4:
 - Updated seb2 browser to fix receiving config file data twice and updating URL filter when reconfiguring.
 - When reading a config file containing a multipart or custom header, these headers are ignored.
 - Now updating URL filter rules when saving config files in the Config Tool, so also seb2 white/blacklists in config files get updated (for compatibility with SEB 2.1.x).
-- Now getting a correct handle for the new main browser window, so a second reconfiguration should close the old main browser window correctly. There is still a browser issue which prevents correctly reconfiguring a second time.
+- Now getting a correct handle for the new main browser window, so a second reconfiguration should close the old main browser window correctly.
 - Fixing reconfiguring SEB, as the main browser window UI wasn't updated according to new settings.
 - Now maximizing browser windows if their size is configured to be 100% width and height.
 - Updated internal seb2 browser app, fixing redirected URLs were not filtered. Additional fixes in seb2:
