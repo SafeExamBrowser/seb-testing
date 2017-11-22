@@ -4,6 +4,7 @@ Here you can find the current beta testing build of the next minor release of SE
 
 New in SEB 2.1.8:
 
+- Changed wording in message box "Permitted Processes Are Already Running”.
 - Fixed quitting SEB doesn't quit some permitted processes like Acrobat.
 - Fixed that the wrong permitted process was automatically started (with autostart property set) when the SEB browser is deactivated.
 - Added log information whether a permitted process has the "autostart" property set and will be automatically started together with SEB.- Process monitoring is now always active if either of the two kiosk modes is set.
