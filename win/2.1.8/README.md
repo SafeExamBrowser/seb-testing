@@ -1,9 +1,11 @@
-**SEB 2.1.8.1 GM Beta Testing Version**
+**SEB 2.1.8.1 GM2 Beta Testing Version**
 
 Here you can find the current beta testing build of the next minor release of SEB for Windows. Testing builds are not intended for productive use. Beta builds contain the final functionality of the release. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.1.8:
 
+- Added logging commands around WMI queries to be able to find out exactly where possible delays happen.
+- Added GotoMeetingWinStore to strictly prohibited processes, moved CamRecorder to default prohibited processes, removed some unnecessary processes.
 - Improved performance of checking for running processes during startup.
 - Logging all processes which are running when starting / reconfiguring SEB
 - Improved closing of processes which are not allowed to run.
