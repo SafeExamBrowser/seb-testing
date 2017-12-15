@@ -1,11 +1,12 @@
-**SEB 2.2 Preview 4 Testing Version**
+**SEB 2.2 Preview Testing Version**
 
 Here you can find the current preview testing build of the next major release of SEB for Windows. Testing builds are not intended for productive use. Preview builds don't contain the full final functionality of the release. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.2pre5:
 - Re-integrated the Create New Desktop kiosk mode
+- Added feature which prevents SEB from being run in a remote session
 - Fixed an issue which occurred when reconfiguring SEB
-- KNOWN PROBLEM: The main browser window can behave slow & unresponsive when using Create New Desktop
+- KNOWN PROBLEM: The main browser window can behave slow & unresponsive when using Create New Desktop - seems to be connected to the flash player plugin (if installed on a computer)
 
 New in SEB 2.2pre4:
 
