@@ -6,7 +6,6 @@ New in SEB 2.2pre5:
 - Re-integrated the Create New Desktop kiosk mode
 - Added feature which prevents SEB from being run in a remote session
 - Fixed an issue which occurred when reconfiguring SEB
-- KNOWN PROBLEM: The main browser window can behave slow & unresponsive when using Create New Desktop - seems to be connected to the flash player plugin (if installed on a computer)
 
 New in SEB 2.2pre4:
 
