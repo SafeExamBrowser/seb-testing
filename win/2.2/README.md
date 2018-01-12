@@ -6,6 +6,8 @@ New in SEB 2.2pre5:
 - Re-integrated the Create New Desktop kiosk mode
 - Added feature which prevents SEB from being run in a remote session
 - Fixed an issue which occurred when reconfiguring SEB
+- Fixed an issue which broke the Create New Desktop kiosk mode when using a settings password
+- Fixed an issue which locked the user on the empty new desktop when cancelling the settings password dialog
 
 New in SEB 2.2pre4:
 
