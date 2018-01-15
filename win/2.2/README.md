@@ -8,6 +8,8 @@ New in SEB 2.2pre5:
 - Fixed an issue which occurred when reconfiguring SEB
 - Fixed an issue which broke the Create New Desktop kiosk mode when using a settings password
 - Fixed an issue which locked the user on the empty new desktop when cancelling the settings password dialog
+- Fixed an issue which prevented disabling of the power options in Windows 7
+- Fixed an issue with the rendering of PDF files
 
 New in SEB 2.2pre4:
 
