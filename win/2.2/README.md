@@ -3,8 +3,10 @@
 Here you can find the current preview testing build of the next major release of SEB for Windows. Testing builds are not intended for productive use. Preview builds don't contain the full final functionality of the release. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 New in SEB 2.2 (final testing version):
-- Fixed bugs related to Metro UI message box
 - Updated version number to 2.2
+- Fixed bugs related to Metro UI message box
+- Fixed bug in config tool which caused it to crash when removing additional ressources
+- Fixed performance issue with application switching mechanism (ALT+TAB) causing Windows to overlay its task switcher over the one from SEB
 
 New in SEB 2.2pre5:
 - Re-integrated the Create New Desktop kiosk mode
