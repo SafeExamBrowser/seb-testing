@@ -151,7 +151,5 @@ config tool.
 - The desktop background picture is now also removed on PCs running Windows 7.
 - If SEB cannot terminate or force quit prohibited applications (Config Tool / Applications / Prohibited Processes) because they are running with other user permissions, then the exam is blocked and SEB asks to enter the quit/restart password (which exam supervisors/supporters should know) to continue.
 
-Known limitations:
-- This version does not yet automatically generate URL filter rules when external additional resources are added. Activate URL filtering and create filter rules manually. 
 
 This document is subject to change, if you're testing SEB 2.2 please check out this document regularly.
