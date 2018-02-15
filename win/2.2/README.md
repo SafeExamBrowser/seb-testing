@@ -2,14 +2,15 @@
 
 Here you can find the current pre-release build of the next major release of SEB for Windows. Pre-release builds are not intended for productive use. You can support us by testing this version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
-New in SEB 2.2 (final testing version, GM 2):
-- Updated version number to 2.2
+New in SEB 2.2 (final testing version, GM 3):
+- Removed options for Additional Resources in SEB Config Tool which aren't yet functional in the release version of SEB 2.2.
 - Changed default kiosk mode to Create new desktop (as in previous SEB versions).
 - Fixed that PDFs with complex URIs weren't opened by the pdfjs PDF viewer, because the URI wasn't being encoded. 
 - Added spell checking dictionaries in addition to US English for Danish, English UK/Canada/Australia, Spanish, French, Portuguese, Swedish, Swedish (Finnland) (da, en-AU, en-GB, en-US, es-ES, fr-classic, pt-PT, sv, sv_FI). Some dictionaries for other languages cannot be distributed together with SEB, because they are only available under a GPL license which isn't compatible with SEB's MPL license. 
 - Fixed bugs related to Metro UI message box
 - Fixed bug in config tool which caused it to crash when removing additional resources.
 - Fixed performance issue with application switching mechanism (ALT+TAB) causing Windows to overlay its task switcher over the SEB one.
+- Updated version number to 2.2
 
 New in SEB 2.2pre5:
 - Re-integrated the Create New Desktop kiosk mode
