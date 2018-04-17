@@ -2,7 +2,27 @@
 
 Here you can find the current pre-release build of the next release of SEB for macOS. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
-New in SEB 2.1.3 for macOS:
+New in SEB 2.1.3pre1 for macOS:
+- Added new Config Key, which can be generated server-side and doesn't change if same settings are loaded in a new SEB version which adds new setting keys.
+- Added browser user agent suffix setting option.
+- Fixed allow spell checking didn't switch off automatic spelling correction when running on macOS 10.12 and later.
+- URL filter now treats query strings consistently between SEB macOS 2.1.3 and Windows 2.2.1.
+- Implemented new URL filter query string condition: If "?." is specified as query, then SEB enforces no query.
+- URL filter now ignores "about:..." URLs. These can be blocked explicitly if desired.
+- Fixed URL filter didn't work correctly with Javascript open links by only closing the new window if the URL of the main frame wasn't allowed (applies only if content filter isn't active).
+- Changed "Restart Exam Button" to "Back to Start Button" and added disclaimer about not logging out users.
+- Fixed modal lock when webpage tries to download a font by sending an Return key event tap, which closes the dialog (invoking the button "Skip").
+- Added setting to disable Siri.
+- Added setting to disable dictation.
+- No longer changing screenshot location on OS X 10.10 and later, as SEB's windows are not captured on screenshots anyways.
+- Now loading SEBClientSettings.seb also from the /Library/Preferences directory: This directory is valid for all users on a Mac and usually only writable with administrator rights,
+- Reconfiguration is now done seamlessly before initializing and opening the browser.
+- Implemented functionality for separate Allow Reload / Show Reload Warning / Allow Navigating setting for exam and new tabs: Hiding navigation and reload buttons in toolbar and enabling navigation with Cmd + cursor keys according to settings.
+- Added confirm quitting option for Quit Link.
+- Now respecting setting "enable right mouse button": Allows to use the right mouse button/context menu according to setting key enableRightMouse. This only has an effect in Javascript, browser plugins and video players etc. (not on regular website elements).
+- Updated default Start URL to "https://safeexambrowser.org/start".
+- Fixed: Sometimes (directly after starting) new browser windows open on screen which isn't allowed, by opening new browser windows always on the main screen.
+
 - Now blocking Predictive Text in TouchBar during an exam.
 - Fixed that double clicking a .seb config file several times could lock SEB.
 - The About SEB splash screen now cannot hide alerts and lock SEB if those were displayed modally.
