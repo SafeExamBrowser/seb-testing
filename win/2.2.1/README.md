@@ -6,7 +6,10 @@ New in SEB 2.2.1pre2 for Windows:
 
 - Improved logging and functionality of Registry Resetter
 - Now expanding environment variables in process arguments
-- Various bugfixes in seb2 browser
+- Second attempt to fix that Browser Exam Key (BEK) check wasn't working correctly with some exam systems (because a trailing slash "/" was removed from the URL used to hash the BEK)
+- Fixed: If blocked URL is opened as a new window, the message "calling this URL is not allowed" is displayed behind a white page
+- Fixed: If canceling opening a seb(s):// link (inside SEB), the SEB browser tries to download the config file
+- Fixed: Quit Link option "Ask user to confirm quitting" not working in some cases
 
 New in SEB 2.2.1pre1 for Windows:
 
@@ -22,7 +25,6 @@ Added options for additional resources:
 - Fixed that SEB couldn't quit Firefox when starting. In SEB 2.2, as a workaround you can explicitly add Firefox as prohibited process with the option "Force quit" activated. But warn your students that a running Firefox will be force terminated and they might loose entered text or open tabs
 - Fixed Desktop wallpaper wasn't restored sometimes after quitting SEB
 - Fixed Ctrl+1/2/3/.../9 allowed changing "tabs", which could lead to users getting stuck on a white page if they pressed the key combination unwittingly
-- Fixed that Browser Exam Key (BEK) check wasn't working correctly with some exam systems (because a trailing slash "/" was removed from the URL used to hash the BEK)
 - Fixed changed browser user agent wasn't updated correctly
 - Fixed that the URL filter didn't treat query strings in URLs consistently in SEB for Windows 2.2/macOS. Added option to explicitly forbid any query part in checked URL: Indicate "?." as query in your filter expression.
 - Fixed Basic Authentication login wasn't working
@@ -31,7 +33,3 @@ Added options for additional resources:
 - Fixed URL filters weren't saved for exam mode configs
 - Fixed reconfiguring from touch optimized to "desktop" mode: Taskbar stayed large
 - Fixed .seb config file as additional resource wasn't loaded by SEB
-
-Known issues in this build:
-- If blocked URL is opened as a new window, the message "calling this URL is not allowed" is displayed behind a white page
-- If canceling opening a seb(s):// link (inside SEB), the SEB browser tries to download the config file
