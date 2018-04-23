@@ -2,6 +2,8 @@
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
+IMPORTANT: Due to a problem with the previous testing installer and the SEB 2.2 release version installer, YOU HAVE TO MANUALLY UNINSTALL A PREVIOUS VERSION OF SEB using the Windows Control Panel (Uninstall Programs) before installing this testing build of SEB 2.2.1pre2.
+
 New in SEB 2.2.1pre2 for Windows:
 
 - Improved logging and functionality of Registry Resetter
