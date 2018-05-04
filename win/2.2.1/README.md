@@ -1,8 +1,16 @@
 **SEB for Windows 2.2.1 Preview Version**
 
-Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
+Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
 
-IMPORTANT: Due to a problem with the previous testing installer and the SEB 2.2 release version installer, YOU HAVE TO MANUALLY UNINSTALL A PREVIOUS VERSION OF SEB using the Windows Control Panel (Uninstall Programs) before installing this testing build of SEB 2.2.1pre2.
+New in SEB 2.2.1pre3 for Windows:
+
+- Fixed bug not hiding additional resource details when deleting last resource in Config Tool / Additional Resources.
+- Fixed bug in reconfiguration mechanism which caused unnecessary reconfiguration during startup.
+- Attempt to resolve concurrency issue in web socket communication with browser.
+- Fixed deadlocks and multi-threading issues when starting SEB with a Quit-URL.
+- Fixed bug trying to kill the System Idle Process when an allowed application (Firefox) was running during startup in Create New Desktop mode.
+- Extended message about remote desktop connections in registry resetter.
+- Updated InstallShield installer to always perform a major update and disabled small/minor updates.
 
 New in SEB 2.2.1pre2 for Windows:
 
