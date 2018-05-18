@@ -2,6 +2,17 @@
 
 Here you can find the current pre-release build of the next release of SEB for macOS. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
+
+New in SEB 2.1.3GM for macOS:
+
+- Now refusing to start an exam which hasn't been submitted properly before, displaying lock screen including log entries from the previously interrupted exam.
+- Now preventing that SIGSTOP could be used to freeze SEB and to cheat undiscovered.
+- Added new setting to allow SEB installation in user's ~/Applications folder. By default, it's now only allowed to start SEB from the /Applications folder.
+- Fixed SEB crashing when using Teach URL Filter feature by properly releasing the preferences window including the Network / Filter table view. 
+- Added Win Registry setting insideSebEnableNetworkConnectionSelector to Security pane and Settings.
+- Updated German localization.
+
+
 New in SEB 2.1.3pre1 for macOS:
 - Added new Config Key, which can be generated server-side and doesn't change if same settings are loaded in a new SEB version which adds new setting keys.
 - Added browser user agent suffix setting option.
