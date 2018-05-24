@@ -2,10 +2,15 @@
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
 
+New in SEB 2.2.1pre4 for Windows:
+
+- Fixed bug in reconfiguration mechanism which caused unnecessary reconfiguration during startup.
+- Fixed bug not hiding additional resource details when deleting last resource.
+- Extended SID handling to always try all available methods to retrieve a SID.
+- Fixed major bug which could lead to an invalid SID value being saved in the registry backup file.
+
 New in SEB 2.2.1pre3 for Windows:
 
-- Fixed bug not hiding additional resource details when deleting last resource in Config Tool / Additional Resources.
-- Fixed bug in reconfiguration mechanism which caused unnecessary reconfiguration during startup.
 - Attempt to resolve concurrency issue in web socket communication with browser.
 - Fixed deadlocks and multi-threading issues when starting SEB with a Quit-URL.
 - Fixed bug trying to kill the System Idle Process when an allowed application (Firefox) was running during startup in Create New Desktop mode.
