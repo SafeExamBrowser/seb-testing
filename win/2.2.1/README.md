@@ -2,6 +2,13 @@
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
 
+New in SEB 2.2.1pre5 for Windows:
+- Fixed bug which deleted files from the temporary additional resources folder.
+- Fixed Additional Resources option "Show confirm box" not working.
+- Fixed PDF response observer to ignore frame requests.
+- Updated browser engine to latest version.
+- Changed wording of client configuration message.
+
 New in SEB 2.2.1pre4 for Windows:
 
 - Fixed bug in reconfiguration mechanism which caused unnecessary reconfiguration during startup.
