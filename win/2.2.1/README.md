@@ -8,6 +8,7 @@ New in SEB 2.2.1pre5 for Windows:
 - Fixed PDF response observer to ignore frame requests.
 - Updated browser engine to latest version.
 - Changed wording of client configuration message.
+- Removed key KeyAdditionalResourcesIdentiﬁerCounter, which isn't acutally used and in addition caused a problem because it was using a strange joint "fi" unicode character.
 
 New in SEB 2.2.1pre4 for Windows:
 
