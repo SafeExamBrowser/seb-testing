@@ -2,6 +2,10 @@
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
 
+New in SEB 2.2.1pre6 for Windows:
+- Removed "Interop.WUApiLib.dll" binary no longer in use from creation of Browser Exam Key BEK and added new binaries.
+- Changed ProcessWatchDog to distinguish processes by ID in order to detect new instances of Firefox (not seb2) being started.
+
 New in SEB 2.2.1pre5 for Windows:
 - Fixed bug which deleted files from the temporary additional resources folder.
 - Fixed Additional Resources option "Show confirm box" not working.
