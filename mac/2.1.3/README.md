@@ -3,8 +3,26 @@
 Here you can find the current pre-release build of the next release of SEB for macOS. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
-New in SEB 2.1.3GM for macOS:
+New in SEB 2.1.3GM2 for macOS:
+- Refactored startup process to correctly initialize SEB if it is started directly (using client settings) or by opening a config file. Now client settings are not considered at all when starting SEB by opening a config file or config link.
+- Fixed problems while opening new settings when alerts were open in SEB.
+- Enable all Function Keys in Hooked Keys (Win) default settings.
+- Fixed changing settings when Exam Pane is displayed doesn't trigger "save changed settings" warning.
+- Fixed SEB freezing (concurrency issue) when opening new settings while Exam Pane is displayed.
+- "Don't Apply" changed settings in Preferences window freezes SEB for minutes.
+- Added new setting for checking if SEB process was stopped.
+- Fixed Preferences window not working correctly on OS X 10.8 (bad auto layout support!) by allowing to open Preferences starting macOS 10.9.
+- Fixed reload (with confirm message) not working on macOS 10.7/10.8 (on non fullscreen browser windows).
+- Added information on how to solve an issue with the Force Quit window alert: "If the window isn't open and this alert is displayed anyways, restart your Mac.".
+- Updated Safari version string to latest Safari version "Version/11.1.1" and 605.1.15 for user agent string.
+- Fixed dictation wasn't recognized in one of the weird setting combinations for dictation in macOS.
+- Fixed two possible issues with API methods which aren't available on macOS 10.7 or 10.10 < 10.10.3.
+- Fixed incompatible constraints (with older macOS versions) in Config File and Browser tab.
+- Now preventing editing of log messages in lock screen.
+- Fixed displaying correct time the SEB process was interrupted (in lock screen and HUD).
 
+
+New in SEB 2.1.3GM for macOS:
 - Now refusing to start an exam which hasn't been submitted properly before, displaying lock screen including log entries from the previously interrupted exam.
 - Now preventing that SIGSTOP could be used to freeze SEB and to cheat undiscovered.
 - Added new setting to allow SEB installation in user's ~/Applications folder. By default, it's now only allowed to start SEB from the /Applications folder.
