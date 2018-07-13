@@ -4,7 +4,7 @@ Here you can find the current pre-release build of the next release of SEB for m
 
 
 New in SEB 2.1.3GM5 for macOS (29C2):
-- Fixed: Performing a reload with warning alert and reconfiguring afterwards crashes SEB.
+- Fixed: Performing a reload with warning alert and reconfiguring afterwards crashes SEB (when main browser window is full screen or when running on macOS < 10.9).
 - Fixed SEB reconfigured alert displayed twice.
 - Fixed Back to Start command not working.
 - Fixed another crash when running on macOS 10.7.
