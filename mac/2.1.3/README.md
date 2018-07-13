@@ -3,6 +3,13 @@
 Here you can find the current pre-release build of the next release of SEB for macOS. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
+New in SEB 2.1.3GM5 for macOS:
+- Fixed SEB reconfigured alert displayed twice.
+- Fixed Back to Start command not working.
+- Fixed another crash when running on macOS 10.7.
+- Changed logging level for Config Key JSON to verbose.
+
+
 New in SEB 2.1.3GM4 for macOS:
 - Improved fix for starting SEB by opening a config file doesn't close full screen apps on second display.
 - Fixed regression issue main browser window not closed when reconfiguring SEB.
