@@ -3,7 +3,8 @@
 Here you can find the current pre-release build of the next release of SEB for macOS. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
-New in SEB 2.1.3GM5 for macOS:
+New in SEB 2.1.3GM5 for macOS (29C2):
+- Fixed: Performing a reload with warning alert and reconfiguring afterwards crashes SEB.
 - Fixed SEB reconfigured alert displayed twice.
 - Fixed Back to Start command not working.
 - Fixed another crash when running on macOS 10.7.
