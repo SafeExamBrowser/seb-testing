@@ -2,6 +2,10 @@
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
 
+New in SEB 2.2.1pre8 for Windows:
+- Modified ARS Handling: Regex trigger support
+- Extended messageSocket and lockScreen with reconnection handling
+
 New in SEB 2.2.1pre7 for Windows:
 - Prevent that SEB browser can be used to finish an exam if SafeExamBrowser.exe is terminated: Added updated seb2 browser app with lock screen implementation.
 - Replaced embedded Firefox with latest version 52.9.0 ESR.
