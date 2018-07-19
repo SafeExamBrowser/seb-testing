@@ -3,6 +3,11 @@
 Here you can find the current pre-release build of the next release of SEB for macOS. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
+New in SEB 2.1.3GM6 for macOS (29DF):
+- Now also blocking dictation when enhanced dictation is enabled and correctly switching off/on dictation according to SEB settings and system settings, without ever activating remote dictation (running on Apple's servers) if it's not yet activated in system settings.
+- Fixed lock screen didn't display correct time a SEB session was inactive (when trying to switch user/display login screen and after detecting SIGSTOP).
+
+
 New in SEB 2.1.3GM5 for macOS (29C2):
 - Fixed: Performing a reload with warning alert and reconfiguring afterwards crashes SEB (when main browser window is full screen or when running on macOS < 10.9).
 - Fixed SEB reconfigured alert displayed twice.
