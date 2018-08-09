@@ -5,6 +5,8 @@ Here you can find the current pre-release build of the next release of SEB for W
 New in SEB 2.2.1pre8 for Windows:
 - Modified ARS Handling: Regex trigger support
 - Extended messageSocket and lockScreen with reconnection handling
+- Resolved issue with missing power options
+- Added group policy update to registry resetter, removed it from SEB service and improved its output logging
 
 New in SEB 2.2.1pre7 for Windows:
 - Prevent that SEB browser can be used to finish an exam if SafeExamBrowser.exe is terminated: Added updated seb2 browser app with lock screen implementation.
