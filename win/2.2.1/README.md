@@ -7,6 +7,11 @@ New in SEB 2.2.1pre8 for Windows:
 - Extended messageSocket and lockScreen with reconnection handling
 - Resolved issue with missing power options
 - Added group policy update to registry resetter, removed it from SEB service and improved its output logging
+third build: Updated seb2 browser engine to latest state:
+- Disabled seb.xul key commands (except F5 reload) on default
+- Error handling in initSpellChecker if language is not initialized
+- Bufix: Typo in initProfile. Now mimetypes.rdf from defaults/profile will be copied into profile. Effect of this needs to be tested.
+
 
 New in SEB 2.2.1pre7 for Windows:
 - Prevent that SEB browser can be used to finish an exam if SafeExamBrowser.exe is terminated: Added updated seb2 browser app with lock screen implementation.
