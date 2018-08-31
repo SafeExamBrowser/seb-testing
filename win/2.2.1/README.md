@@ -1,6 +1,11 @@
-**SEB for Windows 2.2.1 Preview Version**
+**SEB for Windows 2.2.1 Golden Master Version**
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
+
+New in SEB 2.2.1 (GM) for Windows:
+- Improved user ID (SID) Handling in Registry Service, including when Service tries to reset Registry settings after rebooting the machine.
+- Fixed lock screen in SEB browser was displayed again after the browser was unlocked with the quit/unlock password.
+- Renamed quit/restart password following the new terminology to "quit/unlock password". 
 
 New in SEB 2.2.1pre8 for Windows:
 - Modified ARS Handling: Regex trigger support
