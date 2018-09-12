@@ -5,6 +5,12 @@ Here you can find the current preview build of the next release of SEB for macOS
 You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
+New in SEB 2.1.4pre2 for macOS (29FA):
+- SEBMAC-158 Fixed calculating Config Key hash by removing empty salt value (as we're not using a salt with Config Key). Now a standard sha256 calculation of the config key json string produces the same hash as SEB calculates and displays in the Preferences/Exam pane.
+- SEBMAC-160 When checking server trust with embedded certificates, resources in subdomains of already trusted domains are now trusted as well, according to behavior in other standard browsers.
+- Added delegate method which returns a placeholder text in case settings don't allow to display its URL.
+
+
 New in SEB 2.1.4pre1 for macOS (29ED):
 - SEBMAC-146 Fixed: JavaScript confirm dialog doesn't return false when cancel button is clicked (see https://github.com/SafeExamBrowser/seb-mac/issues/24, thanks for reporting the issue, pkarjala)
 - SEBMAC-145 Fixed opening a seb(s) link from another browser which requires authentication while SEB is running subsequently can fail:
