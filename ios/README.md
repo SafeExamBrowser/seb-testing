@@ -1,6 +1,6 @@
 **SEB 2.1.13 for iOS Preview Version**
 
-If your are interested in testing SEB for iOS preview versions (using the Apple TestFlight app/service), you can send us your contact details by private message in our discussion forum (as GitHub doesn't support private messages) or by email to info at safeexambrowser.org.
+If your are interested in testing SEB for iOS preview versions (using the Apple TestFlight app/service), you can send us your contact details by private message in [our discussion](https://sourceforge.net/p/seb/discussion/seb-ios/thread/e7e542a5/?limit=25#feaa/752c) forum (as GitHub doesn't support private messages) or by email to info at safeexambrowser.org.
 
 Please give feedback through TestFlight, in our forum or by creating an issue here on our GitHub page. 
 
