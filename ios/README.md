@@ -15,7 +15,7 @@ As the SEB for iOS app usually is updated automatically on student devices as so
 
 
 New in build 11850:
-- SEB for iOS now supports downloading files. Currently only website generated files (using the data: scheme) can be downloaded. This feature is meant for saving encrypted exam results in case there is no network connection. Those files can be accessed in the Files app ("On My iPad/iPhone" location) and by using iTunes.
+- SEB for iOS now supports downloading files. Currently only website generated files (using the [data: scheme](https://en.wikipedia.org/wiki/Data_URI_scheme)) can be downloaded. This feature is meant for saving encrypted exam results in case there is no network connection. Those files can be accessed in the Files app ("On My iPad/iPhone" location) and by using iTunes.
 - Added setting "Allow Downloading" (settings key: allowDownUploads, default value: false) to in-app settings on a new root-level settings page "Downloads".
 - Moved and renamed setting "Download & Open Config Files" to the new settings page "Downloads".
 - Fixed issue not loading SEB config when seb(s) URL not containing .seb is used to start SEB.
