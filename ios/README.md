@@ -14,17 +14,28 @@ Version 2.1.13 adds important SEB features which were missing in the iOS version
 As the SEB for iOS app usually is updated automatically on student devices as soon as a new version is available in the App Store, **it's important that SEB users test the beta version and report issues BEFORE the final version is released**. So if you are using SEB for iOS in your institution or distribute it with your own assessment solution, please contribute to the improvement of the SEB open source software by participating in our beta version testing. **At the same time, participating in beta testing helps you to avoid possible issues when the new version is released publicly.**
 
 
+New in build 11870:
+- New identities for encrypting and decrypting config files (containing a self signed certificate and random private key) can now be easily created in Settings/Network/Certificates/Choose Identity/Create New…
+- Identity certificates for decrypting SEB exam configs can be embedded into client configs (see Settings/Network/Certificates/Choose Identity). 
+- Identities can be removed from the Keychain (see Settings/Network/Certificates/Choose Identity).
+- Now Automatically creating and embedding an identity when the option is enabled in Settings/Config File (available when editing client config files). 
+- Now auto-selecting latest created or imported identity for encrypting exam configs when the option is enabled in Settings/Config File.
+- When sharing an identity-encrypted config file, the text "encrypted with identity certificate '...'" is added to the description string.
+- Added "more Actions"/"+" button to in-app-settings root view with options "Create Exam Settings" and "Reset to Default Settings" (when in client config) and "Revert to Client Settings" (when in exam config).
+- SEB can now also open .seb config files from iCloud Drive (Files App)
+- Added About SEB button (as SEB icon) to the Initial Configuration Assistant view, so the "Send SEB Log to Developers" link is accessible also when the assistant is visible.
+- Fixed crash when dragging elements in UIWebView. Unfortunately UIWebView doesn't support modern HTML5 Drag and Drop, currently you have to use older methods.
+- Fixed: Wrong error message was displayed when identity certificate for decrypting settings wasn't found in Keychain. Also no longer searching for a Universal/Deep Link config in this case.
+- Fixed crash when calculating Config Key on corrupted settings.
+- Fixed crash when reading identities which don't have email addresses in their certificate.
+
+
 New in build 11860:
 - Support for encrypting config files with identity certificates. These have to be distributed by embedding them into a client config file (currently identities need to be embedded in a desktop version of SEB).
 - Setting for log level is now functional (Settings/Security/Logging/Log Level).
 - Now logging events in the custom URL loading protocol, when the log level is set to Verbose.  
 - Now displaying an alert when a file (from website generated data) was downloaded successfully.
 - Fixed crash in custom URL loading protocol.
-
-Not yet functional in this beta build:
-- Embedding of identity certificates for decrypting config files is not yet available.
-- Automatically create and embed identity and auto-select it for encrypting exam configs is not yet available.
-- Browser Exam Key will be different if SEB is updated and the new version introduces new setting keys (this will no longer be the case in the final release version).
 
 
 New in build 11850:
