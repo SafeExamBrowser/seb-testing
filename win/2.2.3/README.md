@@ -1,6 +1,13 @@
-**SEB for Windows 2.2.3 Preview Version**
+**SEB for Windows 2.2.3 Golden Master Version**
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
+
+New in SEB 2.2.3 GM for Windows:
+- Security improvements important mainly on managed computers.
+- The dialog "Open File With... Safe Exam Browser" is no longer displayed when downloading and opening .seb files.
+- Fixed download dialog so now it is not possible to close it if reconfiguration is in progress (password dialog is shown or reconfiguration error dialog is shown i.e. password was entered incorrectly too many times or decryption failed).
+- Added settings key "backgroundOpenSEBConfig" to disable download dialog for seb(s) links completely. This option allows reconfiguration of Safe Exam Browser without an authentication window if exam setup does not need additional authentication given the download link is accessible anonymously.
+
 
 New in SEB 2.2.3pre2 for Windows:
 - Settings option to switch off detector for RDP/remote session (key allowScreenSharing) now also is considered when changing Registry setting for terminal sessions.
