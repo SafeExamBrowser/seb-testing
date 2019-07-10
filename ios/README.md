@@ -9,9 +9,31 @@ To be tested:
 Version 2.1.13 adds important SEB features which were missing in the iOS version until now. Please test the new SEB 2.1.13 features mentioned below and their compatibility with the desktop versions of Safe Exam Browser. The new Config Key can be tested by using the [prototype for an updated Moodle plugin](https://github.com/SafeExamBrowser/moodle-quizaccess_safeexambrowser) (documentation will be added soon).
 
 
-**Testing the compatibility of especially this beta version with all exam systems is crucial, because it uses some custom networking and web request handling code (a custom web cache and if the Browser Exam/Config Key or embedded SSL certificates are used, a custom URL loading protocol). The more feedback from SEB users we receive, the earlier we can release this version.**
+**Testing the compatibility of especially this beta version with all exam systems is crucial, because it uses some custom networking and web request handling code (a custom web cache and if the Browser Exam/Config Key or embedded SSL certificates are used, a custom URL loading protocol).**
 
 As the SEB for iOS app usually is updated automatically on student devices as soon as a new version is available in the App Store, **it's important that SEB users test the beta version and report issues BEFORE the final version is released**. So if you are using SEB for iOS in your institution or distribute it with your own assessment solution, please contribute to the improvement of the SEB open source software by participating in our beta version testing. **At the same time, participating in beta testing helps you to avoid possible issues when the new version is released publicly.**
+
+**PLEASE NOTE: SEB 2.1.13 for iOS uses a different policy to decide if it can be reconfigured when a seb(s) URL or a .seb config file is opened:** When running in secure mode (a quit password is set in the currently active settings, which invokes AAC/the selected Single App Mode), SEB 2.1.13 cannot be reconfigured, even if it's using persisted client settings. Earlier versions could always be reconfigured when using client settings. If you want to allow reconfiguring SEB by opening a seb(s) URL while running in secure mode, then you need to use the  "Allow Reconfiguring" and "Reconfiguring Config URL" options in Settings/Exam Session. This new policy for reconfiguring will also be introduced to upcoming desktop versions of SEB.
+
+
+New in build 11887: SEB 2.1.13 Release Candidate
+- Improved implementation of the Browser Exam Key: The Browser Exam Key (BEK) depends on SEB's code signature and the current SEB config. Copy the value to the according field in the quiz settings of a compatible exam system. SEB on each platform generates another BEK, even if the same SEB config is used. **Different versions of SEB for iOS generate the same BEK, as long as the same SEB config file is used. This is crucial, as otherwise an update of SEB through the App Store, which can happen at any time, would prevent access to exams protected with the BEK**  
+
+** IMPORTANT: Consider the fact that an update of SEB for iOS on unmanaged iOS devices/BYOD can happen at any time! In case you're checking for specific SEB versions in your exam system integration: For the iOS version only check for an allowed minimum version!** 
+ 
+- Moved display and sharing of current Browser Exam Key and Config Key to separate page in Settings / Exam Session / Share Keys. There you can also see if permanent setting options in the currently opened SEB config are unaltered or have been changed. In the latter case, the message "Config was modified, keys won't match original state!" is displayed.
+- Added setting options to share Browser Exam Key (BEK) and/OR Config Key (CK) either together with a config file containing current settings or without the config. The later option doesn't modify the currently loaded config, so you don't need to update the config file if you already placed it on a server and used it with other SEB versions and the BEK. The key(s) are also copied to the clipboard when closing Settings (so an exam admin can easily paste them to the according quiz settings). If only one of the keys is shared (most commonly only the BEK needs to be manually copy-pasted to exam settings), then the string copied to the pasteboard contains only the key without description ("Browser Exam Key: ..." or "Config Key: ...").
+
+- Added setting option to allow media auto play. By default media doesn't auto play, unless you allow it with the option Settings / Browser Features / Media Autoplay.
+- Added setting options to control if video can be played inline on a web page or only in full screen. There are two separate settings for "Allow Inline Playback on iPad" (enabled by default) and "Allow Inline Playback on iPhone" (disabled by default) in Settings / Browser Features. Please note that by disabling this option, HTML5 video players are forced to use the iOS user interface for controlling playback, which often offers much better usability than custom playback interfaces and guarantees proper full screen presentation. 
+- Implemented functionality and setting option "Allow Picture in Picture Video". On iPad devices supporting PiP, the video plays in a movable and resizable overlay window. If not running SEB in Single App Mode (open book exams, using other apps in exams on managed devices), PiP video keeps playing even if switching to other apps.
+Added playing in background info.plist key for PiP.
+Removed settings option mediaPlaybackAllowsAirPlay as this doesn't seem to be supported properly with UIWebView in current iOS versions.
+- SEB now supports Slide Over and Split View when not running in Single App Mode (open book exams, using other apps in exams on managed devices).
+- Added iOS 13 to the "Allow Running on iOS Beta" option.
+- Fixed handling MDM server config (Managed Configuration), when it's being send repeatedly and was causing "Loading New Settings Not Allowed" alert being displayed when an exam was running. Also fixed that Settings were closed when they were displayed while SEB was backgrounded and after the user switched back to SEB. In this case now an alert is displayed asking if the received MDM settings should be applied (and in-app Settings closed).
+- Fixed lock screen issue.
+- Moved option "Allow QR Code Config" from Security to Config File Settings page.
 
 
 New in build 11870:
@@ -26,6 +48,7 @@ New in build 11870:
 - Added About SEB button (as SEB icon) to the Initial Configuration Assistant view, so the "Send SEB Log to Developers" link is accessible also when the assistant is visible.
 - Fixed crash when dragging elements in UIWebView. Unfortunately UIWebView doesn't support modern HTML5 Drag and Drop, currently you have to use older methods.
 - Fixed: Wrong error message was displayed when identity certificate for decrypting settings wasn't found in Keychain. Also no longer searching for a Universal/Deep Link config in this case.
+- Moved option "
 - Fixed crash when calculating Config Key on corrupted settings.
 - Fixed crash when reading identities which don't have email addresses in their certificate.
 
