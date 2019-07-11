@@ -16,7 +16,11 @@ As the SEB for iOS app usually is updated automatically on student devices as so
 **PLEASE NOTE: SEB 2.1.13 for iOS uses a different policy to decide if it can be reconfigured when a seb(s) URL or a .seb config file is opened:** When running in secure mode (a quit password is set in the currently active settings, which invokes AAC/the selected Single App Mode), SEB 2.1.13 cannot be reconfigured, even if it's using persisted client settings. Earlier versions could always be reconfigured when using client settings. If you want to allow reconfiguring SEB by opening a seb(s) URL while running in secure mode, then you need to use the  "Allow Reconfiguring" and "Reconfiguring Config URL" options in Settings/Exam Session. This new policy for reconfiguring will also be introduced to upcoming desktop versions of SEB.
 
 
-New in build 11887: SEB 2.1.13 Release Candidate
+New in build 11888: SEB 2.1.13 Release Candidate
+- As the Reload button should only be displayed in one location: Fixed that configuration changes for visibility of Reload button in dock didn't remove it in the browser toolbar.
+
+
+New in build 11887
 - Improved implementation of the Browser Exam Key: The Browser Exam Key (BEK) depends on SEB's code signature and the current SEB config. Copy the value to the according field in the quiz settings of a compatible exam system. SEB on each platform generates another BEK, even if the same SEB config is used. Different versions of SEB for iOS generate the same BEK, as long as the same SEB config file is used. This is crucial, as otherwise an update of SEB through the App Store, which can happen at any time, would prevent access to exams protected with the BEK. **IMPORTANT: Consider the fact that an update of SEB for iOS on unmanaged iOS devices/BYOD can happen at any time! In case you're checking for specific SEB versions in your exam system integration: For the iOS version only check for an allowed minimum version!** 
  
 - Moved display and sharing of current Browser Exam Key and Config Key to separate page in Settings / Exam Session / Share Keys. There you can also see if permanent setting options in the currently opened SEB config are unaltered or have been changed. In the latter case, the message "Config was modified, keys won't match original state!" is displayed.
@@ -25,8 +29,6 @@ New in build 11887: SEB 2.1.13 Release Candidate
 - Added setting option to allow media auto play. By default media doesn't auto play, unless you allow it with the option Settings / Browser Features / Media Autoplay.
 - Added setting options to control if video can be played inline on a web page or only in full screen. There are two separate settings for "Allow Inline Playback on iPad" (enabled by default) and "Allow Inline Playback on iPhone" (disabled by default) in Settings / Browser Features. Please note that by disabling this option, HTML5 video players are forced to use the iOS user interface for controlling playback, which often offers much better usability than custom playback interfaces and guarantees proper full screen presentation. 
 - Implemented functionality and setting option "Allow Picture in Picture Video". On iPad devices supporting PiP, the video plays in a movable and resizable overlay window. If not running SEB in Single App Mode (open book exams, using other apps in exams on managed devices), PiP video keeps playing even if switching to other apps.
-Added playing in background info.plist key for PiP.
-Removed settings option mediaPlaybackAllowsAirPlay as this doesn't seem to be supported properly with UIWebView in current iOS versions.
 - SEB now supports Slide Over and Split View when not running in Single App Mode (open book exams, using other apps in exams on managed devices).
 - Added iOS 13 to the "Allow Running on iOS Beta" option.
 - Fixed handling MDM server config (Managed Configuration), when it's being send repeatedly and was causing "Loading New Settings Not Allowed" alert being displayed when an exam was running. Also fixed that Settings were closed when they were displayed while SEB was backgrounded and after the user switched back to SEB. In this case now an alert is displayed asking if the received MDM settings should be applied (and in-app Settings closed).
