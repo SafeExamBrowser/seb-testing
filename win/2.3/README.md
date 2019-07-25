@@ -2,6 +2,9 @@
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
 
+New in SEB 2.3pre3 for Windows: Golden Master Version, please do final testing and report possible issues ASAP!
+- mailto: links are now being ignored.
+
 New in SEB 2.3pre2 for Windows:
 - Added zooming of browser windows using the Ctrl +/- shortcuts
 - Fixed issue when opening a PDF with a link to be opened in a new browser window (target = _blank or JavaScript open), a second, empty browser window was opened.
