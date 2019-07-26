@@ -16,7 +16,18 @@ As the SEB for iOS app usually is updated automatically on student devices as so
 **PLEASE NOTE: SEB 2.1.13 for iOS uses a different policy to decide if it can be reconfigured when a seb(s) URL or a .seb config file is opened:** When running in secure mode (a quit password is set in the currently active settings, which invokes AAC/the selected Single App Mode), SEB 2.1.13 cannot be reconfigured, even if it's using persisted client settings. Earlier versions could always be reconfigured when using client settings. If you want to allow reconfiguring SEB by opening a seb(s) URL while running in secure mode, then you need to use the  "Allow Reconfiguring" and "Reconfiguring Config URL" options in Settings/Exam Session. This new policy for reconfiguring will also be introduced to upcoming desktop versions of SEB.
 
 
-New in build 11888: SEB 2.1.13 Release Candidate
+New in build 11892: SEB 2.1.13 Release Candidate
+- Stop media player audio after its web view was closed.
+- Don't display error "Plug-in handled load".
+- Fixed that the error "Frame load interrupted" could be displayed when a blocked URL was opened:
+Happened when a forwarded URL was blocked by a URL filter. Fixed by ignoring this load error 102.
+
+
+New in build 11889
+- Fixed Browser Exam Key/security issue when running on iOS 9/10.
+
+
+New in build 11888
 - As the Reload button should only be displayed in one location: Fixed that configuration changes for visibility of Reload button in dock didn't remove it in the browser toolbar.
 
 
