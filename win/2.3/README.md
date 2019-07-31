@@ -11,6 +11,7 @@ New in SEB 2.3pre2 for Windows:
 - Deactivated printing in the built-in PDF.js viewer, as that opened a security hole.
 - Now it's possible to open an embedded PDF file (embedded Additional Resource) when starting a SEB session, instead of a Start URL.
 - Fixed bug with last allowed application not starting and all started applications not closing when using SEB without browser.
+- SEB now correctly connects to servers using Basic Authentication.
  
 New in SEB 2.3pre1 for Windows:
 - Fixed issue with quitting SEB and Firefox was running.
