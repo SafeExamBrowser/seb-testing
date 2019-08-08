@@ -2,7 +2,10 @@
 
 Here you can find the current pre-release build of the next release of SEB for Windows. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
 
-New in SEB 2.3pre3 for Windows: Golden Master Version, please do final testing and report possible issues ASAP!
+New in SEB 2.3pre4 for Windows: Golden Master Version, please do final testing and report possible issues ASAP!
+- Fixed issue with permitted processes not being terminated when Firefox is deactivated.
+
+New in SEB 2.3pre3 for Windows
 - mailto: links are now being ignored.
 
 New in SEB 2.3pre2 for Windows:
