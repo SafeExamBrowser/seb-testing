@@ -5,6 +5,20 @@ Here you can find the current preview build of the next release of SEB for macOS
 You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
+New in SEB 2.1.4pre3 for macOS (2AC9):
+- SEBMAC-186 Implemented key shortcuts for switching between open browser windows.
+Left Alt (Option) Key +Tab: Cycle forward through open browser windows
+Left Alt (Option) Key + Left Shift Key + Tab: Cycle backwards through open browser windows
+Right Alt (Option) Key (+ Right Shift) + Tab keeps the standard function (cycle through website elements).
+- SEBMAC-202 Custom App Controls and Quick Actions in Touch Bar with Control Strip active are now disabled, even if BetterTouchTool is used.
+Added alert when App Control mode for Touch Bar couldn't be restored automatically, offering to open System Preferences / Keyboards so user can change the setting back manually.
+- SEBMAC-189 Now selecting multiple files for upload is possible.
+- SEBMAC-179 Import identity with exportable private key when opening it in the Preferences window. Now displaying error when an identity couldn't be exported from the Keychain.
+- SEBMAC-210 Fixed: Background of Dock buttons is highlighted when clicked and button is white instead of gray.
+- SEBMAC-203 Don't display SIGSTOP lock screen when Mac is set to sleep mode. Improved SIGSTOP detection in case system time is changed. Background of lock screen log view is again white also on Mojave.
+- SEBMAC-204 Fixed downloading and opening of SEB config files defined on website as data: didn't work. Also there was an issue with the default ~/Downloads directory when running on Mojave.
+
+
 New in SEB 2.1.4pre3 for macOS (2A61):
 - SEBMAC-198 Implemented blocking macOS screen recording (cmd+shift+5) introduced in Mojave, controlled with setting Preferences / Security / Allow screen capture (key enablePrintScreen).
 - SEBMAC-202 Now disabling custom Quick Actions in Touch Bar.	
