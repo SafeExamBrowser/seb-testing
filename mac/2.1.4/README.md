@@ -5,7 +5,7 @@ Here you can find the current preview build of the next release of SEB for macOS
 You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
-New in SEB 2.1.4pre3 for macOS (2AC9):
+New in SEB 2.1.4pre4 for macOS (2AC9):
 - SEBMAC-186 Implemented key shortcuts for switching between open browser windows.
 Left Alt (Option) Key +Tab: Cycle forward through open browser windows
 Left Alt (Option) Key + Left Shift Key + Tab: Cycle backwards through open browser windows
