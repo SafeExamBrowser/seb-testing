@@ -5,6 +5,21 @@ Here you can find the current preview build of the next release of SEB for macOS
 You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
+New in SEB 2.1.4pre5 for macOS (2AED):
+- SEBMAC-158 Fixed calculating Config Key hash (updated code with current iOS version's).
+- SEBMAC-216 Set default minimal macOS version to 10.12.
+- SEBMAC-204 Fixed downloading and opening of SEB config files defined on website as data: was possible even when an exam session was already running.
+- SEBMAC-210 Fixed background of Dock buttons when clicked wasn't working anymore on macOS < 10.14.
+- SEBMAC-205 Fixed Preferences / Exams showed instead of Browser Exam and Config Keys that the SEB config (loaded with seb(s) link) was modified.
+- SEBMAC-213 Removed using or sending global hotkeys, except in the case the Font Download dialog is displayed.
+- SEBMAC-93 Fixed modal lock when webpage tries to download a font and SEB doesn't have the Privacy / Accessibility right to send a return event tap to close the Font Download dialog: Now SEB is terminated in this case.
+- SEBMAC-213 Removed global hotkeys for F3+F6 shortcut to open Preferences window (F3+F6 shortcut now only works if SEB is the active application).
+- SEBMAC-204 Fix downloading and opening of SEB config files defined on website as data still didn't work if the HTTP response wasn't containing the full filename including ".seb".
+- SEBMAC-202 Show error for not being able to disable custom Quick Actions in Touch Bar only when there actually is a Touch Bar.
+- SEBMAC-188 Fixed issue with NSHomeDirectory() not correctly working on macOS Mojave (always returning sandboxed home directory location even though the app isn't sandboxed!).
+- SEBMAC-198 Fixed checking for agent processes.
+
+
 New in SEB 2.1.4pre4 for macOS (2AC9):
 - SEBMAC-186 Implemented key shortcuts for switching between open browser windows.
 Left Alt (Option) Key +Tab: Cycle forward through open browser windows
