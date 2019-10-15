@@ -5,6 +5,15 @@ Here you can find the current preview build of the next release of SEB for macOS
 You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
+New in SEB 2.1.4pre6 for macOS (2B0D):
+- SEBMAC-204 Fix opening of SEB config files/links wasn't working anymore (regression).
+- SEBMAC-189 Selecting multiple files for upload is now controlled by the HTML input element (multiple-attribute).
+- SEBMAC-210 SEB Dock button disappearing on macOS 10.10 - 10.13 instead of being highlighted when right/long clicked.
+- SEBMAC-93 Fixed modal lock when webpage tries to download a font and SEB doesn't have the Privacy / Accessibility right to send a return event tap to close the Font Download dialog: Checking if SEB is allowed to use Accessibility only when running on macOS 10.9 or newer.
+- Fixed layout constraints in Exam prefs pane.
+- Updated German localization.
+
+
 New in SEB 2.1.4pre5 for macOS (2AED):
 - SEBMAC-158 Fixed calculating Config Key hash (updated code with current iOS version's).
 - SEBMAC-216 Set default minimal macOS version to 10.12.
