@@ -5,6 +5,9 @@ Here you can find the current preview build of the next release of SEB for macOS
 You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
+New in SEB 2.1.4 (Golden Master) for macOS (2B12):
+- Set default minimal macOS version to 10.11.
+
 New in SEB 2.1.4pre6 for macOS (2B0D):
 - SEBMAC-204 Fix opening of SEB config files/links wasn't working anymore (regression).
 - SEBMAC-189 Selecting multiple files for upload is now controlled by the HTML input element (multiple-attribute).
