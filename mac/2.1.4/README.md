@@ -5,8 +5,9 @@ Here you can find the current preview build of the next release of SEB for macOS
 You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
-New in SEB 2.1.4 (Release Candidate 3) for macOS (2B65):
+New in SEB 2.1.4 (Release Candidate 3) for macOS (2B66):
 - SEBMAC-93 Fixed possible crash when exiting SEB and releasing CGEventCreateKeyboardEvent even though it wasn't created when starting SEB (caused by fixing issue under Catalina when creating the CGEventCreateKeyboardEvent on the main thread).
+- SEBMAC-93 To prevent a modal lock when webpage tries to download a font and SEB doesn't have Accessibility permissions, SEB tries to close the font download dialog or terminates SEB only when switching to applications isn't allowed (debug mode or when using on managed Macs).
 - Added additional logging when UserDefaults have to be reset, to better identify the reason.
 
 
