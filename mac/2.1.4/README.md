@@ -5,13 +5,17 @@ Here you can find the current preview build of the next release of SEB for macOS
 You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page. 
 
 
+New in SEB 2.1.4 (Release Candidate 3) for macOS (2B65):
+- SEBMAC-93 Fixed possible crash when exiting SEB and releasing CGEventCreateKeyboardEvent even though it wasn't created when starting SEB (caused by fixing issue under Catalina when creating the CGEventCreateKeyboardEvent on the main thread).
+- Added additional logging when UserDefaults have to be reset, to better identify the reason.
+
+
 New in SEB 2.1.4 (Release Candidate 2) for macOS (2B62):
 - SEBMAC-93 Fixed modal lock when webpage tries to download a font
 by sending a return event tap to close the Font Download dialog: Made this work more reliably by waiting one second before sending return key event tap. Fixed issue under Catalina when creating the CGEventCreateKeyboardEvent on the main thread.
 - SEBMAC-93 To prevent a modal lock when webpage tries to download a font and SEB doesn't have Accessibility permissions, before terminating SEB, save information that this happened and on which web page it happened (title and URL or placeholder). This will be displayed when SEB is started next time.
 - SEBMAC-93 Made sure check for Accessibility permission isn't accessed on macOS < 10.9 (API available on macOS >= 10.9). 
 - SEBMAC-202 Fixed: Alert for not being able to restore the "Touch Bar shows App Controls" mode was sometimes not displayed (especially under Catalina), probably when the terminated Touch Bar process wasn't restarted yet.
-
 
 
 New in SEB 2.1.4 (Release Candidate) for macOS (2B12):
