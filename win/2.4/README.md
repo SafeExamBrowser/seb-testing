@@ -2,6 +2,13 @@
 
 Here you can find the current pre-release build of the next release of SEB for Windows. This is a feature-complete beta version, ready for final testing before a public release. You can support us by testing the pre-release version and give feedback in our forum or by creating an issue here on our GitHub page.
 
+New in SEB 2.4 (Golden Master) for Windows: 
+- Fixed: SEB Client crashes when loading client settings which don't contain all key/values.
+- Fixed wrong version number in installer.
+- Added more default prohibited processes.
+- Renamed setting Security / "Enable screen capture / PrintScreen" to "Allow screen capture / PrintScreen".
+
+
 New in SEB 2.4pre1 for Windows: 
 - Config Key feature, hash checksum value to verify settings used by SEB. The Config Key can be generated automatically by a compatible exam system together with the SEB config to be used for an exam. All SEB versions supporting the Config Key generate the same key, as long as the same SEB config file is used. 
 - Implemented setting keys to control clearing cookies when starting/ending a session (examSessionClearCookiesOnStart / examSessionClearCookiesOnEnd). This can be used to keep users logged in (SEB started with client settings) after an exam session was started.
