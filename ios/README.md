@@ -1,7 +1,7 @@
 This build is a release candidate. Please test this version asap with your exams/assessment systems, as we will release the final version in the App Store in a few days.
 
 New in build 12203:
-SEBMAC-225 No longer displaying "Do you want to close Settings and apply this managed configuration?" after receiving the same config from the MDM server as currently is active.
+- SEBMAC-225 No longer displaying "Do you want to close Settings and apply this managed configuration?" after receiving the same config from the MDM server as currently is active.
 
 New in build 12173:
 - SEBMAC-225 Preventing error "Loading New Settings Not Allowed! ... is already running in exam mode ..." after "Do you want to abort opening Settings and apply this managed configuration?" was confirmed.
